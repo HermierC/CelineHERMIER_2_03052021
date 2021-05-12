@@ -1,0 +1,39 @@
+@font-face {
+    font-family:"Raleway";
+    src:url(./Raleway/Raleway-VariableFont_wght.ttf)
+        url(./Raleway/Raleway-Italic-VariableFont_wght.ttf)
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 50px;
+
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#footer-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
