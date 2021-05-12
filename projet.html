@@ -1,0 +1,79 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="projet.css" />
+		<title>Réservia</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<img src="./images/logo/Reservia@3x.png" alt="logo"/>
+				<ul>
+					<li>Hébergements</li>
+					<li>Activités</li>
+					<li>S'inscrire</li>
+				</ul>
+			</nav>	
+		</header>
+		<banner>
+			<h1>Trouvez votre établissement pour des vacances de rêve</h1>
+			<p>En plein centre-ville ou en pleine nature</p>
+			<form method="post" action=destination.php>
+				<p>
+					<input type="search" value="Marseille,France" />
+					<input type="submit" value="Rechercher"	/>
+				</p>
+				<fieldset>
+					<legend>Filtres</legend>
+					<input type="checkbox" name="économique" id="économique" /> <label for="économique">économique</label>
+					<input type="checkbox" name="Familial" id="Familial" /> <label for="Familial">Familial</label>
+					<input type="checkbox" name="Romantique" id="Romantique" /> <label for="Romantique">Romantique</label>
+					<input type="checkbox" name="Animaux autorisés" id="Animaux autorisés"/> <label for="Animaux autorisés">Animaux autorisés</label>
+
+				</fieldset>
+			</form>
+			<div id="information" >
+				<p>Plus de 500 logements sont disponibles dans cette ville</p>
+			</div>
+		</banner>
+		<section>
+			<div id="Hébergements">
+				<article>
+					<h2>Hébergements à Marseille</h2>
+				</article>
+				<article>
+					<h2>Les plus populaires</h2>
+				</article>
+			</div>
+			<article>
+				<h2>Activités à Marseille</h2>
+			</article>
+		</section>
+		<footer>
+			<div id="footer-items">
+				<div class="footer-item">
+					<h3>A propos</h3>
+					<ul>
+						<li>Fonctionnement du site</li>
+						<li>Conditions générales de vente</li>
+						<li>Données et confidentialité</li>
+					</ul>
+				</div>
+				<div class="footer-item">
+					<h3>Nos hébergements</h3>
+					<ul>
+						<li>Charte qualité</li>
+						<li>Soumettre votre hôtel</li>
+					</ul>
+				</div>
+				<div class="footer-item">
+					<h3>Assistance</h3>
+					<ul>
+						<li>Centre d'aide</li>
+						<li>Nous contacter</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
