@@ -1,9 +1,11 @@
 @font-face {
     font-family:"Raleway";
-    src:url(./Raleway/Raleway-VariableFont_wght.ttf)
-        url(./Raleway/Raleway-Italic-VariableFont_wght.ttf)
+    src:url("./Raleway/Raleway-VariableFont_wght.ttf"),
+        url("./Raleway/Raleway-Italic-VariableFont_wght.ttf")
 }
-
+body {
+    font-family: "Raleway",serif;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -15,12 +17,22 @@ nav img {
 
 nav ul {
     display: flex;
-    list-style: none;
+}
+
+ul {
+    list-style: none
 }
 
 nav li {
     margin-right: 50px;
 
+}
+.hebergements {
+    display: flex;
+}
+
+.Photo {
+    height: 160px;
 }
 
 /* footer */
