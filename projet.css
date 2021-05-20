@@ -1,7 +1,12 @@
 @font-face {
     font-family:"Raleway";
-    src:url(./Raleway/Raleway-VariableFont_wght.ttf)
-        url(./Raleway/Raleway-Italic-VariableFont_wght.ttf)
+    src:url("./Raleway/Raleway-VariableFont_wght.ttf"),
+        url("./Raleway/Raleway-Italic-VariableFont_wght.ttf")
+}
+
+body {
+    font-family: "Raleway",serif;
+    margin: 5px 15px 1px 15px;
 }
 
 nav {
@@ -15,22 +20,135 @@ nav img {
 
 nav ul {
     display: flex;
+}
+
+ul {
     list-style: none;
 }
 
 nav li {
     margin-right: 50px;
+}
+
+
+form p i  {
+    background-color: #f2f2f2;
+    padding: 9px;
+    border-radius: 5px 0 0 5px;
 
 }
+.recherche {
+    padding: 9px;
+    margin: 0;
+
+}
+.bouton_rechercher {
+    background-color: #0065fc;
+    color: #ffffff;
+    padding: 9px;
+    border-radius: 0 5px 5px 0;
+    margin-left: 0px;
+}
+
+fieldset {
+    border: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+fieldset label {
+    border: 3px solid #f2f2f2;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+fieldset i {
+    color: #0065fc;
+    background-color: #deebff;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+
+.chambres {
+    display: flex;
+    justify-content: space-around;
+}
+.chambres article {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+.chambres div {  
+    margin: 5px 10px 10px 5px ;
+    border: 2px solid #ffffff;
+    border-radius: 10px; 
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px gray;    
+}
+
+.hebergements {
+    display: flex;    
+}
+
+.pop {
+    display: flex;
+}
+
+.photo_pop {
+    height: 160px;
+    width: 160px;
+}
+
+article i {
+    color: #0065fc
+}
+
+h2 i {
+    color: black;
+    margin-left: 100px;
+}
+
+
+
+
+/* Activités à Marseille*/
+
+.forme {
+    display:flex;
+}
+.a {
+    display: flex;
+}
+.activites {
+    flex-direction: column;
+    margin: 5px 10px 10px 5px;
+}
+.photo_bis {
+    height: 285px;
+    width:  100%;
+}
+
+/**/
+
+.photo {
+    height: 4cm;
+    width: 6cm;
+    
+}
+
 
 /* footer */
 
 footer {
+    background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 #footer-items {
     width: 100%;
