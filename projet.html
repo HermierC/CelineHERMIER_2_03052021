@@ -8,41 +8,60 @@
 	</head>
 	<body>
 		<header>
-			<nav>
+			<nav id="desktop">
 				<img src="./images/logo/Reservia@3x.png" alt="logo"/>
 				<ul>
-					<li>Hébergements</li>
+					<li id="menu_hebergement">Hébergements</li> 
 					<li>Activités</li>
-					<li>S'inscrire</li>
+					<li class="menu_inscription">S'inscrire</li>
 				</ul>
+			</nav>
+			<nav id="iphone">
+				<section class="premier_menu">
+				<img src="./images/logo/Reservia@3x.png" alt="logo"/>
+				<ul>
+					<li class="menu_inscription">S'inscrire</li>					
+				</ul>
+				</section>
+				<section class="deuxieme_menu">
+				<ul>
+					<li id="menu-hebergement">Hébergements</li>
+					<li id="menu-activites">Activités</li>
+				</ul>
+				</section>
 			</nav>	
 		</header>
-		<banner>
+		<section class="champ_recherche">
 			<h1>Trouvez votre établissement pour des vacances de rêve</h1>
 			<p>En plein centre-ville ou en pleine nature</p>
 			<form method="post" action=destination.php>
 				<p>
 					<i class="fas fa-map-marker-alt"></i>
 					<input type="search" value="Marseille,France" class="recherche" />
-					<input type="submit" value="Rechercher" class="bouton_rechercher"	/>
+					<input type="submit" value="Rechercher" class="bouton_rechercher"  />
+					
 				</p>
-				<fieldset>
-					<legend>Filtres</legend>
-					<input type="checkbox" name="economique" id="economique" />
-					 <label for="economique"><i class="fas fa-money-bill-wave"></i>économique</label>
-					<input type="checkbox" name="familial" id="familial" /> 
-					 <label for="familial"><i class="fas fa-child"></i>Familial</label>
-					<input type="checkbox" name="romantique" id="romantique" />
-					 <label for="romantique"><i class="fas fa-heart"></i>Romantique</label>
-					<input type="checkbox" name="animaux_autorises" id="animaux_autorises"/>
-					 <label for="animaux_autorises"><i class="fas fa-dog"></i>Animaux autorisés</label>
-				</fieldset>
-			</form>		
-			<p> <i class="fas fa-info-circle"></i>
-				Plus de 500 logements sont disponibles dans cette ville</p>			
-		</banner>
-		<section>
-			<div class="chambres">
+				<section class="section_filtre">
+					<p>Filtres</p>
+					<fieldset>
+						<input type="checkbox" name="economique" id="economique" />
+						 <label class="label_filtres" for="economique"><i class="fas fa-money-bill-wave"></i>économique</label>
+						<input type="checkbox" name="familial" id="familial" /> 
+						 <label class="label_filtres" for="familial"><i class="fas fa-child"></i>Familial</label>
+						<input type="checkbox" name="romantique" id="romantique" />
+						 <label class="label_filtres" for="romantique"><i class="fas fa-heart"></i>Romantique</label>
+						<input type="checkbox" name="animaux_autorises" id="animaux_autorises"/>
+						 <label class="label_filtres" for="animaux_autorises"><i class="fas fa-dog"></i>Animaux autorisés</label>
+					</fieldset>
+				</section>				
+			</form>
+			<section id="info" >	
+			<p><i class="fas fa-info"></i>
+				Plus de 500 logements sont disponibles dans cette ville</p>
+			</section>				
+		</section>
+		<section class="section_generale">
+			<section class="chambres">
 				<article>
 					<h2>Hébergements à Marseille</h2>
 					<section class="hebergements">
@@ -99,12 +118,13 @@
 					</section>
 					<p>Afficher plus ... </p>				
 				</article>
-				<article>
+				<article id="pop" >
+					<section >
 					<h2>Les plus populaires <i class="fas fa-chart-line"></i> </h2>
 						<div class="pop">
 							<img src="./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="photo_pop" alt="photo">
 							<p>
-								Hôtel le soleil du matin </br>
+								Hôtel le soleil du matin</br>
 								Nuit à partir de 128€ </br>
 							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
 							</p>
@@ -126,25 +146,26 @@
 								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
 							</p>
 						</div>
+						</section>
 				</article>
-			</div>
+			</section>
 			<article>
 				<h2>Activités à Marseille</h2>
 				<section class="forme">
 					<section class="a">
                 		<section class="activites">
 							<div>
-								<img src="./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="photo_bis" alt="photo">
+								<img src="./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="photo_abis" alt="photo">
 								<p>Vieux port</p>
 							</div>	
 						</section>
 						<section class="activites">
 							<div>
-								<img src="./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="photo" alt="photo">
+								<img src="./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="photo_a" alt="photo">
 								<p>Fort de Pomègues</p>
 							</div>
 							<div>
-								<img src="./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="photo" alt="photo">
+								<img src="./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="photo_a" alt="photo">
 								<p>Îles du Frioul</p>	
 							</div>
 						</section>
@@ -152,17 +173,17 @@
 					<section class="a">
 						<section class="activites">
 							<div>
-								<img src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="photo_bis" alt="photo">
+								<img src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="photo_abis" alt="photo">
 								<p>Parc Nationnal des Calanques</p>
 							</div>	
 						</section>
 						<section class="activites">
 							<div>
-								<img src="./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="photo" alt="photo"></a>
+								<img src="./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="photo_a" alt="photo"></a>
 								<p>Notre-Dame-de-la-Garde</p>	
 							</div>
 							<div>
-								<img src="./images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="photo" alt="photo">
+								<img src="./images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="photo_a" alt="photo">
 								<p>Parc Longchamp</p>	
 							</div>
 						</section>
@@ -174,25 +195,19 @@
 			<div id="footer-items">
 				<div class="footer-item">
 					<h3>A propos</h3>
-					<ul>
-						<li>Fonctionnement du site</li>
-						<li>Conditions générales de vente</li>
-						<li>Données et confidentialité</li>
-					</ul>
+					<p>Fonctionnement du site</br>
+						Conditions générales de vente</br>
+						Données et confidentialité</p>
 				</div>
 				<div class="footer-item">
-					<h3>Nos hébergements</h3>
-					<ul>
-						<li>Charte qualité</li>
-						<li>Soumettre votre hôtel</li>
-					</ul>
+					<h3>Nos hébergements</h3>				
+					<p>Charte qualité</br>
+						Soumettre votre hôtel</p>
 				</div>
 				<div class="footer-item">
 					<h3>Assistance</h3>
-					<ul>
-						<li>Centre d'aide</li>
-						<li>Nous contacter</li>
-					</ul>
+					<p>Centre d'aide</br>
+						Nous contacter</p>
 				</div>
 			</div>
 		</footer>
