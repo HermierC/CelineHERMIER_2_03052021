@@ -6,7 +6,7 @@
 
 body {
     font-family: "Raleway",serif;
-    margin: 5px 15px 1px 15px;
+    flex-wrap: wrap;
 }
 
 nav {
@@ -28,35 +28,63 @@ ul {
 
 nav li {
     margin-right: 50px;
+    padding: 10px;
 }
 
+#iphone {
+    visibility: hidden;
+}
+
+#menu_hebergement{
+    border-top: 2px solid #0065fc;
+}
+
+.menu_inscription {
+    color: #0065fc;
+}
 
 form p i  {
     background-color: #f2f2f2;
-    padding: 9px;
+    padding: 10px;
     border-radius: 5px 0 0 5px;
-
+    margin-right: -5px;
 }
+
+
+
 .recherche {
-    padding: 9px;
-    margin: 0;
-
+    padding: 10px;
 }
+
 .bouton_rechercher {
     background-color: #0065fc;
     color: #ffffff;
-    padding: 9px;
+    padding: 10px;
     border-radius: 0 5px 5px 0;
-    margin-left: 0px;
+    margin-left: -10px;
+}
+
+
+
+.section_filtre {
+    display: flex;
 }
 
 fieldset {
     border: none;
 }
 
+
 input[type="checkbox"] {
     display: none;
 }
+
+.label_filtres {
+    margin: 30px;
+    padding: 5px 15px 5px 0px;
+}
+
+fieldset label:hover 
 
 fieldset label {
     border: 3px solid #f2f2f2;
@@ -71,11 +99,20 @@ fieldset i {
     border-radius: 50%;
 }
 
+#info i {
+    color: #0065fc;
+    border: 1px solid #deebff;
+    border-radius:50%;
+}
+
+
+
 
 .chambres {
     display: flex;
-    justify-content: space-around;
+
 }
+
 .chambres article {
     background-color: #f2f2f2;
     border-radius: 10px;
@@ -83,25 +120,29 @@ fieldset i {
 }
 
 .chambres div {  
-    margin: 5px 10px 10px 5px ;
+    margin: 5px 5px 10px 5px ;
     border: 2px solid #ffffff;
     border-radius: 10px; 
     background-color: #ffffff;
-    box-shadow: 1px 1px 10px gray;    
+    box-shadow: 1px 1px 10px gray;  
+
 }
 
 .hebergements {
     display: flex;    
 }
 
+#pop {
+    margin-left: 80px;
+}
 .pop {
     display: flex;
 }
 
-.photo_pop {
-    height: 160px;
-    width: 160px;
+.pop p {
+    margin-left: 15px;
 }
+
 
 article i {
     color: #0065fc
@@ -109,10 +150,8 @@ article i {
 
 h2 i {
     color: black;
-    margin-left: 100px;
+    margin-left: 80px;
 }
-
-
 
 
 /* Activités à Marseille*/
@@ -120,24 +159,49 @@ h2 i {
 .forme {
     display:flex;
 }
+
 .a {
     display: flex;
 }
+
 .activites {
     flex-direction: column;
-    margin: 5px 10px 10px 5px;
+    margin: 15px 35px 10px 35px;
 }
-.photo_bis {
-    height: 285px;
-    width:  100%;
+
+.forme div {
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px gray; 
+}
+
+.photo_a {
+    height : 150px;
+    width : 270px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.photo_abis {
+    height: 350px;
+    width:  270px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 /**/
 
 .photo {
-    height: 4cm;
-    width: 6cm;
-    
+    height: 130px;
+    width: 265px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.photo_pop {
+    height: 160px;
+    width: 140px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
 }
 
 
@@ -155,3 +219,87 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+
+/* responsive */
+@media screen and (max-width : 1024px) {
+    body {
+        width: auto;
+    }
+
+
+    #iphone {
+        visibility: visible;
+        flex-direction: column;
+    }
+
+    .premier_menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .deuxieme_menu ul {
+        justify-content: space-around;
+    }
+ 
+    
+    #menu-hebergement {
+        border-bottom: 2px solid #0065fc;
+    }
+
+    #menu-activites {
+        border-bottom: 2px solid gray ;
+    }
+    #desktop {
+       visibility: hidden
+    }
+
+    .section_filtre {
+        flex-direction: column;
+    }
+    .label_filtres {
+        margin-left: 0px;
+    }
+
+    article {
+        flex-direction: column;
+    }
+    article section {
+        flex-direction: column;
+    }
+    .chambres {
+        flex-direction: column-reverse;
+    }
+    .chambres article {
+        background-color: white;
+    }
+
+    #pop {
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        padding: 10px 20px 10px 20px; 
+        margin-left: 0px; 
+    }
+    /* photos */
+    .photo {
+        height: 150px;
+        width : 395px;
+    }
+    .photo_a {
+        height: 150px;
+        width : 395px;
+    }
+    .photo_abis {
+        height: 150px;
+        width : 395px;
+    }
+    .photo_pop {
+        height: 200px;
+        width : 500px;
+    }
+
+    /* footer */
+    #footer-items {
+        flex-direction: column;
+    }
+}
+
