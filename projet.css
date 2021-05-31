@@ -51,7 +51,6 @@ form p i  {
 }
 
 
-
 .recherche {
     padding: 10px;
 }
@@ -63,7 +62,6 @@ form p i  {
     border-radius: 0 5px 5px 0;
     margin-left: -10px;
 }
-
 
 
 .section_filtre {
@@ -82,12 +80,14 @@ input[type="checkbox"] {
 .label_filtres {
     margin: 30px;
     padding: 5px 15px 5px 0px;
+    border : 3px solid #deebff;
+    border-radius: 50px;
 }
 
 fieldset label:hover 
 
 fieldset label {
-    border: 3px solid #f2f2f2;
+    border: 3px solid ;
     border-radius: 50px;
     margin: 30px;
 }
@@ -104,7 +104,6 @@ fieldset i {
     border: 1px solid #deebff;
     border-radius:50%;
 }
-
 
 
 
@@ -128,6 +127,10 @@ fieldset i {
 
 }
 
+.nom_hotel {
+    font-weight: bold;
+}
+
 .hebergements {
     display: flex;    
 }
@@ -135,12 +138,21 @@ fieldset i {
 #pop {
     margin-left: 80px;
 }
+
 .pop {
     display: flex;
 }
 
 .pop p {
     margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-right: 30px;
+    
+}
+
+.pop p i  {
+    margin-top: 90px;
 }
 
 
@@ -167,6 +179,10 @@ h2 i {
 .activites {
     flex-direction: column;
     margin: 15px 35px 10px 35px;
+}
+
+.activites p {
+    padding-bottom: 15px;
 }
 
 .forme div {
@@ -279,22 +295,34 @@ footer {
         padding: 10px 20px 10px 20px; 
         margin-left: 0px; 
     }
+
+    .forme {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .activites {
+        margin :0 0 0 0 ;
+    }
+
+    .pop p i  {
+        margin-top: 65px;
+    }
     /* photos */
     .photo {
         height: 150px;
-        width : 395px;
+        width : 350px;
     }
     .photo_a {
         height: 150px;
-        width : 395px;
+        width : 365px;
     }
     .photo_abis {
         height: 150px;
-        width : 395px;
+        width : 365px;
     }
     .photo_pop {
-        height: 200px;
-        width : 500px;
+        height: 150px;
+        width : 140px;
     }
 
     /* footer */
@@ -302,4 +330,3 @@ footer {
         flex-direction: column;
     }
 }
-
