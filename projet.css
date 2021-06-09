@@ -32,9 +32,7 @@ nav li {
     padding: 10px;
 }
 
-#iphone {
-    visibility: hidden;
-}
+
 
 #menu_hebergement{
     border-top: 2px solid #0065fc;
@@ -46,16 +44,20 @@ nav li {
 
 form p i  {
     background-color: #f2f2f2;
-    padding: 10px;
-    border-radius: 5px 0 0 5px;
-    margin-right: -5px;
+    padding: 20px 18px 17px 18px;
+    border-radius: 15px 0 0 15px;
+    margin-right: -5px;    
 }
 
-
+form input {
+    font-size: 18px;
+}
 
 .recherche {
-    padding: 10px;
+    padding: 15px;
     font-weight: bold;
+    border-width: 1px;
+    border-style: solid;
 }
 
 #i_recherche {
@@ -65,13 +67,18 @@ form p i  {
 .bouton_rechercher {
     background-color: #0065fc;
     color: #ffffff;
-    padding: 10px;
-    border-radius: 0 5px 5px 0;
+    padding: 16px;
+    border-radius: 0 15px 15px 0;
     margin-left: -10px;
     font-weight: bold;
+    border-style: none;
 }
 
-
+.section-exemple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .section_filtre {
     display: flex;
@@ -82,15 +89,19 @@ fieldset {
     border: none;
 }
 
+fieldset span {
+    margin-left: 10px;
+}
 
-input[type="checkbox"] {
+
+input[type="text"] {
     display: none;
 }
 
 .label_filtres {
     margin: 30px;
-    padding: 5px 15px 5px 0px;
-    border: 3px solid #deebff;
+    padding: 10px 15px 10px 0px;
+    border: 2px solid #c4cfdf;
     border-radius: 50px;
 }
 
@@ -105,7 +116,7 @@ fieldset label {
 fieldset i {
     color: #0065fc;
     background-color: #deebff;
-    padding: 8px;
+    padding: 12px;
     border-radius: 50%;
 }
 
@@ -139,6 +150,14 @@ fieldset i {
     box-shadow: 1px 1px 10px gray;  
 }
 
+.hotel p {
+    margin: 15px;
+} 
+
+.petits_prix {
+    font-weight: bold;
+}
+
 
 .hebergements {
     display: flex;    
@@ -158,6 +177,13 @@ fieldset i {
 
 .description_hotel {
     display: grid;
+}
+.description {
+    margin-top : 10px;
+}
+
+.note {
+    margin-left: 15px;
 }
 
 .pop p {
@@ -187,7 +213,7 @@ h2 i {
 
 .activites {
     flex-direction: column;
-    margin: 15px 38px 30px 25px;
+    margin: 15px 38px 20px 25px;
 }
 
 .forme div {
@@ -195,11 +221,15 @@ h2 i {
     box-shadow: 1px 1px 10px gray; 
 }
 
+.activites div {
+    margin-bottom: 30px;
+}
+
 .photo_a {
     height : 150px;
     width : 270px;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;    
 }
 
 .photo_abis {
@@ -210,7 +240,8 @@ h2 i {
 }
 .activites p {
      padding-bottom: 15px;
-     margin-left: 8px;
+     margin-left: 15px;
+     font-weight: bold;
 }
 /**/
 
@@ -251,19 +282,6 @@ footer {
     }
 
 
-    #iphone {
-        visibility: visible;
-        flex-direction: column;
-    }
-
-    .premier_menu {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .deuxieme_menu ul {
-        justify-content: space-around;
-    }
 
     .bouton_rechercher {
         visibility: hidden;
@@ -285,9 +303,7 @@ footer {
     #menu-activites {
         border-bottom: 2px solid gray ;
     }
-    #desktop {
-       visibility: hidden
-    }
+  
 
     .section_filtre {
         flex-direction: column;
@@ -318,15 +334,15 @@ footer {
     /* photos */
     .photo {
         height: 150px;
-        width : 350px;
+        width : 325px;
     }
     .photo_a {
         height: 150px;
-        width : 365px;
+        width : 325px;
     }
     .photo_abis {
         height: 150px;
-        width : 365px;
+        width : 325px;
     }
     .photo_pop {
         height: 150px;
