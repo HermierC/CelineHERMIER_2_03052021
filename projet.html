@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<header>
-			<nav id="desktop">
+			<nav>
 				<img src="./images/logo/Reservia@3x.png" alt="logo"/>
 				<ul>
 					<li id="menu_hebergement">Hébergements</li> 
@@ -16,20 +16,7 @@
 					<li class="menu_inscription">S'inscrire</li>
 				</ul>
 			</nav>
-			<nav id="iphone">
-				<section class="premier_menu">
-				<img src="./images/logo/Reservia@3x.png" alt="logo"/>
-				<ul>
-					<li class="menu_inscription">S'inscrire</li>					
-				</ul>
-				</section>
-				<section class="deuxieme_menu">
-				<ul>
-					<li id="menu-hebergement">Hébergements</li>
-					<li id="menu-activites">Activités</li>
-				</ul>
-				</section>
-			</nav>	
+
 		</header>
 		<section class="champ_recherche">
 			<h1>Trouvez votre établissement pour des vacances de rêve</h1>
@@ -45,14 +32,14 @@
 				<section class="section_filtre">
 					<p>Filtres</p>
 					<fieldset>
-						<input type="checkbox" name="economique" id="economique" />
-						 <label class="label_filtres" for="economique"><i class="fas fa-money-bill-wave"></i>économique</label>
-						<input type="checkbox" name="familial" id="familial" /> 
-						 <label class="label_filtres" for="familial"><i class="fas fa-child"></i>Familial</label>
-						<input type="checkbox" name="romantique" id="romantique" />
-						 <label class="label_filtres" for="romantique"><i class="fas fa-heart"></i>Romantique</label>
-						<input type="checkbox" name="animaux_autorises" id="animaux_autorises"/>
-						 <label class="label_filtres" for="animaux_autorises"><i class="fas fa-dog"></i>Animaux autorisés</label>
+						<input type="text" name="economique" id="economique" />
+						 <label class="label_filtres" for="economique"><i class="fas fa-money-bill-wave"></i><span>économique</span></label>
+						<input type="text" name="familial" id="familial" /> 
+						 <label class="label_filtres" for="familial"><i class="fas fa-child"></i><span>Familial</span></label>
+						<input type="text" name="romantique" id="romantique" />
+						 <label class="label_filtres" for="romantique"><i class="fas fa-heart"></i><span>Romantique</span></label>
+						<input type="text" name="animaux_autorises" id="animaux_autorises"/>
+						 <label class="label_filtres" for="animaux_autorises"><i class="fas fa-dog"></i><span>Animaux autorisés</span></label>
 					</fieldset>
 				</section>				
 			</form>
@@ -69,24 +56,24 @@
 					<div class="hotel">
 						<img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="photo" alt="photo">
 						<p>
-							<span class="nom_hotel">Auberge la Cannebière</span> </br>
-							Nuit à partir de 25€ </br>
+							<span class="nom_hotel">Auberge la Cannebière</span> <br /> <br />
+							Nuit à partir de <span class="petits_prix">25€</span> <br />
 							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
 						</p>
 					</div>									
 					<div class="hotel">
 						<img src="./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="photo" alt="photo">
 						<p>
-							<span class="nom_hotel">Hôtel du port</span> </br>
-							Nuit à partir de 52€ </br>
+							<span class="nom_hotel">Hôtel du port</span> <br /> <br />
+							Nuit à partir de 52€ <br />
 							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 						</p>
 					</div>					
 					<div class="hotel">
 						<img src="./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="photo" alt="photo">
 						<p>
-							<span class="nom_hotel">Hôtel des mouettes</span> </br>
-							Nuit à partir de 76€</br>
+							<span class="nom_hotel">Hôtel des mouettes</span> <br /> <br />
+							Nuit à partir de 76€<br />
 							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
 						</p>
 					</div>
@@ -95,24 +82,24 @@
 						<div class="hotel">
 							<img src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="photo" alt="photo">	
 							<p>
-								<span class="nom_hotel">Hôtel de la mer</span> </br>
-								Nuit à partir de 46€ </br>
+								<span class="nom_hotel">Hôtel de la mer</span> <br /> <br />
+								Nuit à partir de 46€ <br />
 								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
 							</p>
 						</div>						
 						<div class="hotel">
 							<img src="./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="photo" alt="photo"></a>
 							<p>
-								<span class="nom_hotel">Auberge Le Panier</span></br>
-								Nuit à partir de 23€ </br>
+								<span class="nom_hotel">Auberge Le Panier</span><br /> <br />
+								Nuit à partir de  <span class="petits_prix">23€</span> <br />
 								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
 							</p>
 						</div>					
 						<div class="hotel">
 							<img src="./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="photo" alt="photo">
 							<p>
-								<span class="nom_hotel">Hôtel chez Amina</span> </br>
-								Nuit à partir de 96€ </br>
+								<span class="nom_hotel">Hôtel chez Amina</span> <br /> <br/>
+								Nuit à partir de 96€ <br />
 								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 							</p>	
 						</div>			
@@ -126,27 +113,29 @@
 							<img src="./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="photo_pop" alt="photo">
 							<div class="description_hotel">
 							<p>
-								<span class="nom_hotel">Hôtel le soleil du matin</span></br>
-								<span class="description"> Nuit à partir de 128€</span> </br> </p>
-							<div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div> 
+								<span class="nom_hotel">Hôtel le soleil du matin</span><br /> <br />
+								<span class="description"> Nuit à partir de 128€</span> <br /> </p>
+							<div class="note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div> 
 							</div>
 						</div>
 						<div class="pop">
 							<img src="./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" class="photo_pop" alt="photo">
+							<div class="description_hotel">
 							<p>
-								<span class="nom_hotel">Au coeur de l'eau </span> </br>
-								Chambres d'hôtes </br>
-								Nuit à partir de 71€ </br>
-								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-							</p>	
+								<span class="nom_hotel">Au coeur de l'eau  <br />
+								Chambres d'hôtes</span> <br /> <br />
+								<span class="description">Nuit à partir de 71€</span> <br /> </p>
+							<div class="note">	<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </div>
+							</div>	
 						</div>
 						<div class="pop">
 							<img src="./images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="photo_pop" alt="photo">
+							<div class="description_hotel">
 							<p>
-								<span class="nom_hotel">Hôtel tout bleu et blanc</span> </br>
-								Nuit à partir de 68€ </br>
-								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-							</p>
+								<span class="nom_hotel">Hôtel tout bleu et blanc</span> <br /> <br />
+								<span class="description">Nuit à partir de 68€ </span> <br /> </p>
+							<div class="note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </div>
+							</div>
 						</div>
 						</section>
 				</article>
@@ -197,18 +186,18 @@
 			<div id="footer-items">
 				<div class="footer-item">
 					<h3>A propos</h3>
-					<p>Fonctionnement du site</br>
-						Conditions générales de vente</br>
+					<p>Fonctionnement du site<br />
+						Conditions générales de vente<br />
 						Données et confidentialité</p>
 				</div>
 				<div class="footer-item">
 					<h3>Nos hébergements</h3>				
-					<p>Charte qualité</br>
+					<p>Charte qualité<br />
 						Soumettre votre hôtel</p>
 				</div>
 				<div class="footer-item">
 					<h3>Assistance</h3>
-					<p>Centre d'aide</br>
+					<p>Centre d'aide<br />
 						Nous contacter</p>
 				</div>
 			</div>
