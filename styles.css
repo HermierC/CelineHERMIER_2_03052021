@@ -281,7 +281,6 @@ h2 i {
     border-radius: 10px 0 0 10px;
 }
 
-
 /* footer */
 
 footer {
@@ -295,6 +294,9 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+.footer-item ul {
+    margin-left: -38px;
 }
 
 /* Media Queries */
